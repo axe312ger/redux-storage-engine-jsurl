@@ -1,0 +1,100 @@
+{
+  "name": "redux-storage-engine-jsurl",
+  "version": "1.0.1",
+  "description": "jsurl engine for redux-store. Store your state in the url hash.",
+  "main": "dist/index.js",
+  "module": "dist/es-modules/index.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production babel src -d dist",
+    "lint": "eslint src test",
+    "test": "npm run lint && npm run test:coverage",
+    "test:coverage": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text --check-coverage --lines 100 npm run test:unit",
+    "test:unit": "cross-env NODE_ENV=test ava --verbose -s",
+    "test:unit:watch": "cross-env NODE_ENV=test ava --verbose -s --watch",
+    "preversion": "npm test",
+    "version": "npm run build && git add -f dist",
+    "postversion": "git push && git push --tags",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "url": "https://github.com/axe312ger/redux-storage-engine-jsurl.git",
+    "type": "git"
+  },
+  "keywords": [
+    "redux",
+    "redux-storage",
+    "redux-storage-engine",
+    "jsurl"
+  ],
+  "author": "Benedikt Rötsch <info@benedikt-roetsch.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/axe312ger/redux-storage-engine-jsurl/issues"
+  },
+  "homepage": "https://github.com/axe312ger/redux-storage-engine-jsurl#readme",
+  "files": [
+    "dist",
+    "README.md",
+    "CONTRIBUTING.md"
+  ],
+  "devDependencies": {
+    "ava": "^0.18.1",
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-eslint": "^7.1.1",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-istanbul": "^4.0.0",
+    "babel-preset-es2015-node4": "^2.1.1",
+    "babel-preset-es2015-node6": "^0.4.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "condition-circle": "^1.5.0",
+    "cross-env": "^3.1.3",
+    "cz-conventional-changelog": "^1.2.0",
+    "eslint": "^3.12.2",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "mock-browser": "^0.92.12",
+    "node-resemble-js": "^0.2.0",
+    "nyc": "^10.0.0",
+    "semantic-release": "^6.3.2",
+    "url-parse": "^1.1.7"
+  },
+  "dependencies": {
+    "jsurl": "^0.1.5"
+  },
+  "peerDependencies": {
+    "redux-storage": "^4.1.2"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit",
+    "source": [
+      "src/**/*.js"
+    ],
+    "files": [
+      "test/**/*.test.js"
+    ]
+  },
+  "nyc": {
+    "include": [
+      "src/**/*.js"
+    ],
+    "require": [
+      "babel-register"
+    ],
+    "sourceMap": false,
+    "instrument": false
+  },
+  "release": {
+    "verifyConditions": "condition-circle"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
