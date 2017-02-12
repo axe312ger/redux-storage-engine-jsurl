@@ -2,7 +2,7 @@
   "name": "redux-storage-engine-jsurl",
   "version": "0.0.0-determined-by-semantic-release",
   "description": "jsurl engine for redux-store. Store your state in the url hash.",
-  "main": "dist/index.js",
+  "main": "dist/node6/index.js",
   "module": "dist/es-modules/index.js",
   "scripts": {
     "build": "cross-env NODE_ENV=production babel src -d dist",
@@ -44,8 +44,7 @@
     "babel-eslint": "^7.1.1",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-plugin-istanbul": "^4.0.0",
-    "babel-preset-es2015-node4": "^2.1.1",
-    "babel-preset-es2015-node6": "^0.4.0",
+    "babel-preset-env": "^1.1.8",
     "babel-preset-stage-0": "^6.16.0",
     "condition-circle": "^1.5.0",
     "cross-env": "^3.1.3",
@@ -71,7 +70,6 @@
     "require": [
       "babel-register"
     ],
-    "babel": "inherit",
     "source": [
       "src/**/*.js"
     ],

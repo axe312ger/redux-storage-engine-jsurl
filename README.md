@@ -23,10 +23,14 @@ npm install --save redux-storage-engine-jsurl
 
 ## Usage
 
-Just use it as regular Metalsmith plugin. If your environment does not support the import syntax, see further below.
+Just use it as any other redux-storage engine. If your environment does not support the import syntax, see further below.
 
 ```js
 import createEngine from 'redux-storage-engine-jsurl'
+
+// In case your loader does not support the package.json module entry:
+import createEngine from 'redux-storage-engine-jsurl/dist/es-modules'
+
 const engine = createEngine()
 ```
 

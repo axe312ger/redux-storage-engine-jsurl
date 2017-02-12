@@ -1,27 +1,73 @@
 {
-  "presets": ["stage-0"],
-  "plugins": [
-    "add-module-exports"
+  "presets": [
+    "stage-0",
+    [
+      "env",
+      {
+        "debug": true,
+        "targets": {
+          "node": 7
+        }
+      }
+    ]
   ],
   "env": {
     "test": {
-      "presets": ["es2015-node6"],
       "plugins": [
-        "istanbul",
+        "istanbul"
+      ]
+    },
+    "es-modules": {
+      "presets": [
+        "stage-0",
+        [
+          "env",
+          {
+            "debug": true,
+            "targets": {
+              "node": 6,
+              "modules": false
+            }
+          }
+        ]
+      ],
+      "plugins": [
         "add-module-exports"
       ]
     },
     "node4": {
-      "presets": ["es2015-node4"],
+      "presets": [
+        "stage-0",
+        [
+          "env",
+          {
+            "debug": true,
+            "targets": {
+              "node": 4
+            }
+          }
+        ]
+      ],
       "plugins": [
         "add-module-exports"
-      ],
+      ]
     },
     "node6": {
-      "presets": ["es2015-node6"],
+      "presets": [
+        "stage-0",
+        [
+          "env",
+          {
+            "debug": true,
+            "targets": {
+              "node": 6
+            }
+          }
+        ]
+      ],
       "plugins": [
         "add-module-exports"
-      ],
+      ]
     }
   }
 }
