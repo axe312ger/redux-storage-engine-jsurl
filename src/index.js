@@ -19,6 +19,10 @@ export default (key, replacer, reviver) => ({
   save (state) {
     const title = document.title
     const path = window.location.pathname
+    if (Object.keys(state).length === 0 && state.constructor === Object) {
+      window.history.pushState({}, title, path)
+      return Promise.resolve()
+    }
     const encodedState = JSURL.stringify(state)
     const url = `${path}#${encodedState}`
     window.history.pushState({}, title, url)

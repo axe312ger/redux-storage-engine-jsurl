@@ -72,3 +72,8 @@ test('saving complex state and sets complex hash', async (t) => {
   await engine.save(COMPLEX_STATE)
   t.is(global.window.location.hash, COMPLEX_STATE_HASH)
 })
+test('saving empty state and sets no hash', async (t) => {
+  global.window.location.hash = ''
+  await engine.save({})
+  t.is(global.window.location.hash, '')
+})
