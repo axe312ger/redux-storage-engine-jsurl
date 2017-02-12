@@ -16,4 +16,4 @@ test:
     - BABEL_ENV=node6 yarn build -- -d dist/node6
     - BABEL_ENV=node4 yarn build -- -d dist/node4
     - yarn run semantic-release || true
-    - mv dist/* $CIRCLE_ARTIFACTS/dist
+    - mv dist/* $CIRCLE_ARTIFACTS
