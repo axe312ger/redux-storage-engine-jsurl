@@ -1,6 +1,6 @@
 {
   "name": "redux-storage-engine-jsurl",
-  "version": "1.0.1",
+  "version": "0.0.0-determined-by-semantic-release",
   "description": "jsurl engine for redux-store. Store your state in the url hash.",
   "main": "dist/index.js",
   "module": "dist/es-modules/index.js",
