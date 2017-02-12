@@ -1,5 +1,7 @@
 # redux-storage-engine-jsurl
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/axe312ger/redux-storage-engine-jsurl.svg)](https://greenkeeper.io/)
+
 > Store your state as url hash via [redux-storage](https://github.com/react-stack/redux-storage) and [jsurl](https://github.com/Sage/jsurl)
 
 [![Build Status](https://img.shields.io/circleci/project/axe312ger/redux-storage-engine-jsurl/prototype.svg?maxAge=2592000)](https://circleci.com/gh/axe312ger/redux-storage-engine-jsurl)
