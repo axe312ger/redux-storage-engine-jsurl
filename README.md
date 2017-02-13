@@ -2,8 +2,8 @@
 
 > Store your state as url hash via [redux-storage](https://github.com/react-stack/redux-storage) and [jsurl](https://github.com/Sage/jsurl)
 
-[![Build Status](https://img.shields.io/circleci/project/axe312ger/redux-storage-engine-jsurl/prototype.svg?maxAge=2592000)](https://circleci.com/gh/axe312ger/redux-storage-engine-jsurl)
-[![CodeCov Badge](https://img.shields.io/codecov/c/github/axe312ger/redux-storage-engine-jsurl.svg?maxAge=2592000)](https://codecov.io/gh/axe312ger/redux-storage-engine-jsurl)
+[![Build Status](https://img.shields.io/circleci/project/axe312ger/redux-storage-engine-jsurl/master.svg?maxAge=2592000)](https://circleci.com/gh/axe312ger/redux-storage-engine-jsurl)
+[![codecov](https://codecov.io/gh/axe312ger/redux-storage-engine-jsurl/branch/master/graph/badge.svg)](https://codecov.io/gh/axe312ger/redux-storage-engine-jsurl)
 ![David](https://img.shields.io/david/axe312ger/redux-storage-engine-jsurl.svg)
 ![David](https://img.shields.io/david/dev/axe312ger/redux-storage-engine-jsurl.svg)
 
