@@ -8,10 +8,11 @@
 ![David](https://img.shields.io/david/dev/axe312ger/redux-storage-engine-jsurl.svg)
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://axe312.mit-license.org)
-[![NPM Version](https://img.shields.io/npm/v/redux-storage-engine-jsurl.svg)](https://axe312.mit-license.org)
+[![NPM Version](https://img.shields.io/npm/v/redux-storage-engine-jsurl.svg)](https://www.npmjs.com/package/redux-storage-engine-jsurl)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 [![semantic-release](https://img.shields.io/badge/%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Greenkeeper badge](https://badges.greenkeeper.io/axe312ger/redux-storage-engine-jsurl.svg)](https://greenkeeper.io/)
 
 With this engine, you allow your users to share their application state via the URL.
 
