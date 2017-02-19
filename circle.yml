@@ -12,8 +12,8 @@ test:
     - yarn test
   post:
     - bash <(curl -s https://codecov.io/bash)
-    - yarn build -- -d dist/es-modules
-    - BABEL_ENV=node6 yarn build -- -d dist/node6
-    - BABEL_ENV=node4 yarn build -- -d dist/node4
+    - yarn build:es-modules
+    - yarn build:node6
+    - yarn build:node4
     - yarn run semantic-release || true
     - mv dist/* $CIRCLE_ARTIFACTS

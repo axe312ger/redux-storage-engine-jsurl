@@ -37,6 +37,9 @@ import createEngine from 'redux-storage-engine-jsurl/dist/es-modules'
 const engine = createEngine()
 ```
 
+This is a ES5 variant using ES2015 modules instead of CommonJS. Best option when u want to use
+tree shaking & and use UglifyJS2 until it is ready for [ES6](https://github.com/webpack/webpack/issues/2545).
+
 ### Node 6
 ```js
 const createEngine = require('redux-storage-engine-jsurl')

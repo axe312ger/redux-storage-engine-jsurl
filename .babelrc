@@ -1,52 +1,28 @@
 {
-  "presets": [
-    "stage-0",
-    [
-      "env",
-      {
-        "debug": true,
-        "targets": {
-          "node": 7
-        }
-      }
-    ]
-  ],
   "env": {
     "test": {
+      "presets": [
+        "@ava/stage-4"
+      ],
       "plugins": [
         "istanbul"
       ]
     },
     "es-modules": {
       "presets": [
-        "stage-0",
-        [
-          "env",
-          {
-            "debug": true,
-            "targets": {
-              "node": 6,
-              "modules": false
-            }
-          }
-        ]
-      ],
-      "plugins": [
-        "add-module-exports"
+        ["es2015", {
+          "modules": false
+        }]
       ]
     },
     "node4": {
       "presets": [
-        "stage-0",
-        [
-          "env",
-          {
-            "debug": true,
-            "targets": {
-              "node": 4
-            }
+        ["env", {
+          "debug": true,
+          "targets": {
+            "node": 4
           }
-        ]
+        }]
       ],
       "plugins": [
         "add-module-exports"
@@ -54,16 +30,12 @@
     },
     "node6": {
       "presets": [
-        "stage-0",
-        [
-          "env",
-          {
-            "debug": true,
-            "targets": {
-              "node": 6
-            }
+        ["env", {
+          "debug": true,
+          "targets": {
+            "node": 6
           }
-        ]
+        }]
       ],
       "plugins": [
         "add-module-exports"
