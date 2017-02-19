@@ -18,6 +18,8 @@ With this engine, you allow your users to share their application state via the 
 
 It stores your passed state in the `window.location.hash` property using `window.pushState()`. With [jsurl](https://github.com/Sage/jsurl) the stored state after the fragment identifier is kind of human readable.
 
+The main purpose of this project is to give developers of small and simple redux based apps the option that users can share their app state with others without having to implement a router.
+
 ## Install
 
 ```js
