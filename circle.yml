@@ -13,7 +13,8 @@ test:
   post:
     - bash <(curl -s https://codecov.io/bash)
     - yarn build:es-modules
-    - yarn build:node6
+    - yarn build:node0.10
     - yarn build:node4
+    - yarn build:node6
     - yarn run semantic-release || true
     - mv dist/* $CIRCLE_ARTIFACTS
