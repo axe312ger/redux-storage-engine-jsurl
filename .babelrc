@@ -15,6 +15,19 @@
         }]
       ]
     },
+    "node0.10": {
+      "presets": [
+        ["env", {
+          "debug": true,
+          "targets": {
+            "node": 0.10
+          }
+        }]
+      ],
+      "plugins": [
+        "add-module-exports"
+      ]
+    },
     "node4": {
       "presets": [
         ["env", {

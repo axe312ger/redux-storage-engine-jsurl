@@ -28,33 +28,25 @@ npm install --save redux-storage-engine-jsurl
 
 ## Usage
 
-Just use it as any other redux-storage engine. If your environment does not support the import syntax, see further below.
+Just use it as any other redux-storage engine.
+
+This projects provides a ES2015 modules variant using the `modules` in the `package.json`.
+Also it supplies variants for node v0.10, v4 and v6. They are required dynamically to avoid breaking changes when supporting new LTS versions in the future.
 
 ```js
+// ES2015 module syntax:
 import createEngine from 'redux-storage-engine-jsurl'
 
 // In case your loader does not support the package.json module entry:
 import createEngine from 'redux-storage-engine-jsurl/dist/es-modules'
 
-const engine = createEngine()
-```
-
-This is a ES5 variant using ES2015 modules instead of CommonJS. Best option when u want to use
-tree shaking & and use UglifyJS2 until it is ready for [ES6](https://github.com/webpack/webpack/issues/2545).
-
-### Node 6
-```js
+// Old CommonJS variant:
 const createEngine = require('redux-storage-engine-jsurl')
+
 const engine = createEngine()
 ```
 
-### Node 4
-A version for the LTS version of node is also supplied. You can require it like this:
-
-```js
-const createEngine = require('redux-storage-engine-jsurl/dist/node4')
-const engine = createEngine()
-```
+The ES2015 modules variant is fully transpiled to ES5 except for the import/export syntax to support tools like UglifyJS2.
 
 ## Options
 
