@@ -60,7 +60,7 @@
     "eslint-config-standard": "^6.2.1",
     "eslint-plugin-babel": "^4.0.0",
     "eslint-plugin-promise": "^3.4.0",
-    "eslint-plugin-standard": "^2.0.1",
+    "eslint-plugin-standard": "^3.0.0",
     "husky": "^0.13.1",
     "mock-browser": "^0.92.12",
     "node-resemble-js": "^0.2.0",
