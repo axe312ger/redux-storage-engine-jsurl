@@ -65,7 +65,7 @@
     "mock-browser": "^0.92.12",
     "node-resemble-js": "^0.2.0",
     "nyc": "^10.0.0",
-    "semantic-release": "^6.3.2",
+    "semantic-release": "^15.5.2",
     "url-parse": "^1.1.7"
   },
   "dependencies": {
