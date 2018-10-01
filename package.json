@@ -61,7 +61,7 @@
     "eslint-plugin-babel": "^4.0.0",
     "eslint-plugin-promise": "^3.4.0",
     "eslint-plugin-standard": "^2.0.1",
-    "husky": "^0.13.1",
+    "husky": "^1.1.0",
     "mock-browser": "^0.92.12",
     "node-resemble-js": "^0.2.0",
     "nyc": "^10.0.0",
